@@ -14,7 +14,7 @@ const Banner = () => {
         Your perfect solution for web3 development
       </div>
       <Link href="/asset/create" className={classes.btn}>
-        <Button color="accent">Let's build!</Button>
+        <Button color="accent">{"Let's build!"}</Button>
       </Link>
     </div>
   );
