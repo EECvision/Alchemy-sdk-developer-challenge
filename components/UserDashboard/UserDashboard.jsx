@@ -8,25 +8,27 @@ const UserDashboard = ({ contractNfts, mLoading }) => {
         <div className={classes.collectionName}>
           {contractNfts[0]?.contract.name}
         </div>
-        <div className={classes.details}>
-          <a
-            target="_blank"
-            rel="noreferrer noopener"
-            href={`https://mumbai.polygonscan.com/address/${contractNfts[0]?.contract.contractDeployer}`}
-            className={classes.list}
-          >
-            Creator
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer noopener"
-            href={`https://mumbai.polygonscan.com/address/${contractNfts[0]?.contract.address}`}
-            className={classes.list}
-          >
-            Nft Address
-          </a>
-          <div className={classes.list}>Chain: Mumbai</div>
-        </div>
+        {contractNfts.length ? (
+          <div className={classes.details}>
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              href={`https://mumbai.polygonscan.com/address/${contractNfts[0]?.contract.contractDeployer}`}
+              className={classes.list}
+            >
+              Creator
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              href={`https://mumbai.polygonscan.com/address/${contractNfts[0]?.contract.address}`}
+              className={classes.list}
+            >
+              Nft Address
+            </a>
+            <div className={classes.list}>Chain: Mumbai</div>
+          </div>
+        ) : null}
       </div>
       <div className={classes.wrapper}>
         <div className={classes.display}>

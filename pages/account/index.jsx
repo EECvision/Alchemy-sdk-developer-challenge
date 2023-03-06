@@ -5,6 +5,7 @@ import { getNftsForContract } from "../../alchemy.scripts";
 import UserDashboard from "../../components/UserDashboard/UserDashboard";
 import { StateContext } from "../../globalState/state.context";
 import classes from "../../styles/Account.module.css";
+import minterData from "../../_constants/minter.json";
 
 export default function Account() {
   const { account } = useContext(StateContext);
@@ -17,7 +18,7 @@ export default function Account() {
       setMLoading(true);
       // Get all the NFTs owned by an address
       const { nfts } = await getNftsForContract(
-        "0x0fe44ED7FcaEbbd45FeF8f79F7DCc5965Ce7e417"
+        minterData["80001"][minterData["80001"].length - 1].contractAddress
       );
       setMLoading(false);
       setContractNfts(nfts);
