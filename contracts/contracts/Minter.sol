@@ -10,7 +10,7 @@ contract Minter is ERC721, ERC721URIStorage {
 
   Counters.Counter private _tokenIdCounter;
 
-  constructor() ERC721("Alchemy Token", "ATK") {}
+  constructor() ERC721("AwesomeBuild", "ASK") {}
 
   function safeMint(string memory uri) public {
     uint256 tokenId = _tokenIdCounter.current();
