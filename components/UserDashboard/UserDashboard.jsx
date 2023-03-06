@@ -1,12 +1,7 @@
-import { useEffect } from "react";
 import UserNFTCard from "../../components/NFTCard-User/UserNFTCard";
 import classes from "./UserDashboard.module.css";
 
 const UserDashboard = ({ contractNfts, mLoading }) => {
-  useEffect(() => {
-    console.log(contractNfts);
-  }, []);
-
   return (
     <div className={classes.container}>
       <div className={classes.heading}>

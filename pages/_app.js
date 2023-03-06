@@ -1,3 +1,4 @@
+import AccountInfo from "../components/AccountInfo/AccountInfo";
 import ErrorBoundary from "../components/ErrorBoundary/ErrorBoundary";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }) {
             <Component {...pageProps} />
           </div>
           <Footer />
+          <AccountInfo />
           <Modals />
         </StateContextProvider>
       </ErrorBoundary>
