@@ -1,0 +1,35 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+.container label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.container .info {
+  font-size: 0.8rem;
+  font-weight: 300;
+  background: linear-gradient(108.34deg, #B495F6 -6.47%, #6D4DE8 118.43%);
+  border-radius: 0.6em;
+  padding: 0.4em 1em;
+  font-weight: 600;
+}
+
+.container input {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid transparent;
+  background: #1E1E30;
+  border-radius: 1em;
+  color: #FFFFFF;
+}
+
+.container input:focus {
+  outline: 1px solid var(--outline);
+}

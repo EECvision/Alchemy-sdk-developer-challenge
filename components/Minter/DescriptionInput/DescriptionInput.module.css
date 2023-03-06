@@ -1,0 +1,35 @@
+.description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+.description label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.description .info {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.description textarea {
+  width: 100%;
+  min-height: 10em;
+  resize: vertical;
+  padding: 1em;
+  border: 1px solid transparent;
+  background: var(--card-bg);
+  border-radius: 0.8em;
+  color: var(--main-text);
+  font-family: sans-serif;
+  border: 1px solid var(--card-bg-border);
+}
+
+.description textarea:focus {
+  outline: 1px solid #0CAFFD;
+}

@@ -1,0 +1,65 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: var(--overlay);
+  z-index: 20;
+  color: var(--main-text);
+  padding: 0 2em;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 32em;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+  border-radius: 1.8em;
+  background: white;
+  color: var(--main-text);
+  margin-top: 12vh;
+  position: relative;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.loadingState {
+  color: #0D99FF;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tryBtn {
+  background: #0D99FF;
+  color: white;
+  padding: 0.4em 2em;
+  border-radius: 0.2em;
+  border: none;
+}
+
+.icon {
+  width: 6em;
+  height: 6em;
+}
+
+.errorMsg {
+  font-weight: 600;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,87 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 150ms;
+  position: relative;
+  overflow: hidden;
+}
+
+.button.disabled * {
+  cursor: not-allowed;
+}
+
+.button.lg {
+  width: 16em;
+  height: 4em;
+  border-radius: 1em;
+  font-weight: 600;
+}
+
+.button.md {
+  width: 12em;
+  height: 3.2em;
+  border-radius: 0.8em;
+  font-weight: 600;
+}
+
+.button.auto {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8em;
+  font-weight: 600;
+}
+
+.button:hover {
+  transform: scale(0.99);
+}
+
+.button.click {
+  transform: scale(0.97);
+}
+
+.button.accent {
+  background: var(--accent);
+  color: var(--main-bg);
+}
+
+.button.default {
+  background: var(--main-bg);
+  box-shadow: 0px 6px 14px -2px #DDDDEB;
+  color: var(--main-text);
+}
+
+.overlay {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  background: rgba(0, 0, 0, 0.03);
+  transition: all 300ms;
+  opacity: 0;
+}
+
+.button:hover .overlay {
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .button.lg {
+    width: 12em;
+    height: 3.4em;
+    border-radius: 0.8em;
+  }
+
+  .button.md {
+    width: 10em;
+    height: 2.8em;
+    border-radius: 0.8em;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  min-height: 60vh;
+}
+
+.connectAlert {
+  width: 100%;
+  font-weight: 600;
+  padding-left: 2em;
+  margin-top: 3em;
+  min-height: calc(100vh - (15 * 16px));
+  font-size: 1.4rem;
+  color: var(--main-text);
+}
+
+@media screen and (max-width: 480px) {
+  .connectAlert {
+    min-height: calc(100vh - (12 * 16px));
+    font-size: 1rem;
+  }
+}

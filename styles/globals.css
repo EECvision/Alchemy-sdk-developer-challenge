@@ -1,9 +1,35 @@
+:root {
+  --main-bg: #ffffff;
+  --main-text: #0F1D40;
+  --card-bg: #F3F3FF;
+  --card-bg-border: #d3d3e2;
+  --color-accent: #0057DA;
+  --main-bg-lighter: #323256;
+  --border-line: #43436A;
+  --text-light: #A9A9A9;
+  --outline: #4A3AFF;
+  --border-light: #393954;
+  --accent: linear-gradient(180deg, #0D99FF 0%, #4A3AFF 100%);
+  --overlay: #1c1c35bf;
+  --heading-text-lg: 4em;
+  --heading-text-md: 2.8em;
+  --heading-text-sm: 1.8em;
+  --sub-heading-text-lg: 3em;
+  --sub-heading-text-md: 2.2em;
+  --sub-heading-text-sm: 1.6em;
+  --text-lg: 1.25em;
+  --text-md: 1.2em;
+  --text-sm: 1.15em;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: var(--main-bg);
+  color: var(--main-text);
 }
 
 a {
@@ -13,14 +39,6 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+  margin: 0;
+  padding: 0;
 }

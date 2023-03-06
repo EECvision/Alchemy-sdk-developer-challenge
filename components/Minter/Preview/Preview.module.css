@@ -1,0 +1,78 @@
+.container {
+  width: 100%;
+  max-width: 24em;
+  position: sticky;
+  top: 6em;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+
+.card {
+  padding: 1.4em;
+  border-radius: 0.8em;
+  background: var(--card-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1em;
+  color: var(--main-text);
+  border: 1px solid #E5E8EB;
+  box-shadow: 26px 18px 18px rgba(93, 134, 194, 0.05);
+}
+
+.container img {
+  width: 100%;
+  max-height: 16em;
+  border-radius: 0.8em;
+  object-fit: contain;
+}
+
+.nameWrapper {
+  width: 100%;
+  padding: 1em;
+  background: var(--card-bg-border);
+  border-radius: 0.8em;
+  min-height: 8em;
+}
+
+.name {
+  word-wrap: break-word;
+  margin-bottom: 0.6em;
+  width: 100%;
+  font-weight: 600;
+}
+
+.description {
+  word-wrap: break-word;
+  width: 100%;
+}
+
+.attributes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.attribute {
+  background: var(--main-bg);
+  padding: 0.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+  border-radius: 0.4em;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    display: none;
+  }
+}

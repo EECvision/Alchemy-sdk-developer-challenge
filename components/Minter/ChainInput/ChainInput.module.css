@@ -1,0 +1,75 @@
+.chains {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1em;
+  cursor: default;
+}
+
+.chains label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.chains .info {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.activeChain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6em 1em;
+  background: var(--card-bg);
+  border-radius: 0.8em;
+  color: #FFFFFF;
+  border: 1px solid var(--card-bg-border);
+}
+
+.chainInfo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+.chainIcon {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background: white;
+}
+
+.account {
+  color: var(--main-text);
+}
+
+.connected {
+  background: rgba(13, 153, 255, 0.15);
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+  color: #0D99FF;
+}
+
+.connect {
+  color: #0D99FF;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.chainSelector {
+  width: 100%;
+  padding: 0.6em;
+}
+
+.chainSelector.disabled * {
+  cursor: not-allowed;
+}
+
+.chain {
+  cursor: pointer;
+}
