@@ -2,7 +2,7 @@
 import { Network, Alchemy, Utils } from "alchemy-sdk";
 
 const settings = {
-  apiKey: "gPeYDYpOqJQBtlKTc_r8fEEHq3ZQX0xm",
+  apiKey: process.env.NEXT_PUBLIC_POLYGON_ALCHEMY_SDK,
   network: Network.MATIC_MUMBAI,
 };
 
