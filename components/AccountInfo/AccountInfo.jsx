@@ -46,7 +46,7 @@ const AccountInfo = () => {
           <span className={classes.value}>{allNfts}</span>
         </div>
         <div>
-          <span className={classes.key}>Contract nfts:</span>{" "}
+          <span className={classes.key}>Contract nfts</span>{" "}
           <span className={classes.value}>{contractNfts}</span>{" "}
         </div>
       </div>
